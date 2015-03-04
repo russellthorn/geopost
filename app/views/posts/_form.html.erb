@@ -1,0 +1,10 @@
+<%= simple_form_for @post do |form| %>
+
+  <%= form.input :title, label: "Post title", placeholder: 'Title here' %>
+  <%= form.input :body, placeholder: 'Body here' %>
+  <%= form.input :is_published, label: "This post will be is published" %>
+  <%= form.input :is_featured, label: "This post will be is featured" %>
+
+  <%= form.button :submit, "Create post" %>
+
+<% end %>
